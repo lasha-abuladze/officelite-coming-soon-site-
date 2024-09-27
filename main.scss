@@ -1,0 +1,67 @@
+
+
+
+
+@mixin button-gen {
+    width: 171px;
+    height: 56px;
+    border: none;
+    background: none;
+
+    border-radius: 33px;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+body {
+    background-color: #fff;
+    font-family: "Kumbh Sans", system-ui;
+    overflow: hidden;
+}
+
+
+.header__background-img {
+    position: absolute;
+    width: 100%;
+    transform: scale(1.5);
+    transform: translateY(-30%);
+}
+
+
+.header {
+    padding: 46px 24px 0px 24px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    .header__illustration {
+        width: 171px;
+        margin-top: 80px;
+        margin-bottom: 65px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        color: #333950;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #747B95;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+    
+    button {
+        @include button-gen();
+        background-color: #5175FF;
+        color: #fff;
+    }
+}
