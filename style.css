@@ -1,7 +1,6 @@
 body {
   background-color: #fff;
-  font-family: "Kumbh Sans", system-ui;
-  overflow: hidden; }
+  font-family: "Kumbh Sans", system-ui; }
 
 .header__background-img {
   position: absolute;
@@ -39,3 +38,94 @@ body {
     font-weight: 700;
     background-color: #5175FF;
     color: #fff; }
+
+main {
+  padding: 75px 24px 0px 24px;
+  box-sizing: border-box; }
+  main .plans__section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; }
+    main .plans__section .plan__div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 55px;
+      border-radius: 8px;
+      padding: 40px 0px;
+      box-sizing: border-box; }
+      main .plans__section .plan__div h5 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 45px; }
+      main .plans__section .plan__div strong {
+        font-size: 56px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: inline-block; }
+      main .plans__section .plan__div div:first-child p {
+        font-weight: 600; }
+      main .plans__section .plan__div div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+        font-weight: 400; }
+      main .plans__section .plan__div button {
+        width: 171px;
+        height: 56px;
+        border: none;
+        background: none;
+        border-radius: 33px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700; }
+    main .plans__section .plan--free {
+      background-color: #fff;
+      box-shadow: 0px 0px 50px rgba(51, 57, 80, 0.2); }
+      main .plans__section .plan--free div:first-child {
+        color: #333950; }
+      main .plans__section .plan--free div:nth-child(2) {
+        color: #333950; }
+      main .plans__section .plan--free button {
+        width: 171px;
+        height: 56px;
+        border: none;
+        background: none;
+        border-radius: 33px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: rgba(81, 117, 255, 0.1);
+        color: #5175FF; }
+    main .plans__section .plan--pro {
+      background-color: #5175FF;
+      color: #fff;
+      position: relative;
+      overflow: hidden; }
+      main .plans__section .plan--pro button {
+        background-color: #fff;
+        color: #5175FF; }
+      main .plans__section .plan--pro .plan-pro--background {
+        position: absolute;
+        width: 100%;
+        top: -20%;
+        transform: scale(2); }
+    main .plans__section .plan--ultimate {
+      background-color: rgba(151, 151, 151, 0.1); }
+      main .plans__section .plan--ultimate div:first-child {
+        color: #333950; }
+      main .plans__section .plan--ultimate div:nth-child(2) {
+        color: #333950; }
+      main .plans__section .plan--ultimate button {
+        width: 171px;
+        height: 56px;
+        border: none;
+        background: none;
+        border-radius: 33px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: rgba(81, 117, 255, 0.1);
+        color: #5175FF; }
