@@ -1,12 +1,16 @@
+html {
+  overflow-x: hidden; }
+
 body {
   background-color: #fff;
-  font-family: "Kumbh Sans", system-ui; }
+  font-family: "Kumbh Sans", system-ui;
+  position: relative;
+  overflow-x: hidden; }
 
 .header__background-img {
   position: absolute;
   width: 100%;
-  transform: scale(1.5);
-  transform: translateY(-30%); }
+  transform: scale(1.5) translateY(-30%); }
 
 .header {
   padding: 46px 24px 0px 24px;
@@ -182,3 +186,131 @@ main {
       left: 0;
       transform: scale(4);
       z-index: 0; }
+
+@media only screen and (min-width: 768px) {
+  .header__background-img {
+    overflow-y: hidden;
+    width: 100% !important;
+    position: absolute;
+    transform: scale(1.5);
+    left: 50%;
+    transform: translateY(-30%); }
+  .header {
+    padding: 72px 40px 70px 40px;
+    box-sizing: border-box;
+    text-align: left; }
+    .header article {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      gap: 40px;
+      margin-top: 50px;
+      justify-content: space-between; }
+      .header article .header__illustration {
+        width: 281px;
+        order: 2;
+        margin: 0;
+        transform: translateY(30px); }
+      .header article hgroup {
+        max-width: 500px; }
+      .header article h1 {
+        margin-bottom: 30px; }
+    .header button {
+      position: absolute;
+      bottom: -50px; }
+  main {
+    padding-top: 550px; }
+    main .plans__section {
+      padding: 75px 40px 0px 40px; }
+      main .plans__section .plan__div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 175px;
+        padding-left: 40px;
+        padding-bottom: 140px;
+        position: relative; }
+        main .plans__section .plan__div h5 {
+          margin-bottom: 20px; }
+        main .plans__section .plan__div strong {
+          margin-bottom: 15px; }
+        main .plans__section .plan__div div:nth-child(2) {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          transform: translateY(30px); }
+        main .plans__section .plan__div button {
+          position: absolute;
+          left: 40px;
+          bottom: 50px; }
+      main .plans__section .plan--pro .plan-pro--background {
+        position: absolute;
+        width: 100%;
+        top: -53%;
+        left: -31%;
+        transform: scale(1.7); }
+      main .plans__section .plan--ultimate {
+        background-color: #f1f1f1; }
+        main .plans__section .plan--ultimate div:first-child {
+          color: #333950; }
+        main .plans__section .plan--ultimate div:nth-child(2) {
+          color: #333950; }
+        main .plans__section .plan--ultimate button {
+          width: 171px;
+          height: 56px;
+          border: none;
+          background: none;
+          border-radius: 33px;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 700;
+          background-color: rgba(81, 117, 255, 0.1);
+          color: #5175FF; }
+    main footer {
+      padding: 600px 24px 100px 24px;
+      box-sizing: border-box;
+      text-align: center;
+      color: #fff;
+      background-color: #25293A;
+      position: relative;
+      overflow: hidden; }
+      main footer p {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        margin-bottom: 25px; }
+        main footer p span {
+          color: #5175FF; }
+      main footer .time__left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px; }
+        main footer .time__left div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          width: 72px;
+          height: 92px;
+          box-sizing: border-box;
+          background-color: #333950;
+          border-radius: 8px;
+          z-index: 2; }
+          main footer .time__left div strong {
+            font-size: 32px;
+            font-weight: 700; }
+          main footer .time__left div span {
+            font-size: 12px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.6); }
+      main footer .footer--background-img {
+        width: 100%;
+        position: absolute;
+        bottom: -25%;
+        left: 0;
+        transform: scale(1.8);
+        z-index: 0; } }
