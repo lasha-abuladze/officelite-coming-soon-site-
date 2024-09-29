@@ -40,12 +40,19 @@ body {
     color: #fff; }
 
 main {
-  padding: 75px 24px 0px 24px;
-  box-sizing: border-box; }
+  padding-top: 820px;
+  box-sizing: border-box;
+  position: relative; }
   main .plans__section {
+    width: 100%;
+    padding: 75px 24px 0px 24px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 18px; }
+    gap: 18px;
+    position: absolute;
+    z-index: 1;
+    top: 0; }
     main .plans__section .plan__div {
       display: flex;
       flex-direction: column;
@@ -113,7 +120,7 @@ main {
         top: -20%;
         transform: scale(2); }
     main .plans__section .plan--ultimate {
-      background-color: rgba(151, 151, 151, 0.1); }
+      background-color: #f1f1f1; }
       main .plans__section .plan--ultimate div:first-child {
         color: #333950; }
       main .plans__section .plan--ultimate div:nth-child(2) {
@@ -129,3 +136,49 @@ main {
         font-weight: 700;
         background-color: rgba(81, 117, 255, 0.1);
         color: #5175FF; }
+  main footer {
+    padding: 850px 24px 100px 24px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    background-color: #25293A;
+    position: relative;
+    overflow: hidden; }
+    main footer p {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 25px; }
+      main footer p span {
+        color: #5175FF; }
+    main footer .time__left {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px; }
+      main footer .time__left div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 72px;
+        height: 92px;
+        box-sizing: border-box;
+        background-color: #333950;
+        border-radius: 8px;
+        z-index: 2; }
+        main footer .time__left div strong {
+          font-size: 32px;
+          font-weight: 700; }
+        main footer .time__left div span {
+          font-size: 12px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.6); }
+    main footer .footer--background-img {
+      width: 100%;
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      transform: scale(4);
+      z-index: 0; }

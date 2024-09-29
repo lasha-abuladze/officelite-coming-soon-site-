@@ -78,14 +78,22 @@ body {
 
 
 main {
-
-    padding: 75px 24px 0px 24px;
+    padding-top: 820px;
     box-sizing: border-box;
+    // padding: 75px 24px 0px 24px;
+    // box-sizing: border-box;
+    position: relative;
 
     .plans__section {
-
+        width: 100%;
+        padding: 75px 24px 0px 24px;
+        box-sizing: border-box;
         @include flex-column();
         gap: 18px;
+
+        position: absolute;
+        z-index: 1;
+        top: 0;
 
         .plan__div {
             @include flex-column();
@@ -173,7 +181,7 @@ main {
         }
 
         .plan--ultimate {
-            background-color: rgba(151, 151, 151, 0.1);
+            background-color: rgb(241, 241, 241);
 
             div {
 
@@ -195,7 +203,71 @@ main {
 
     }
 
+    footer {
+
+        padding: 850px 24px 100px 24px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #fff;
+        background-color: #25293A;
+        position: relative;
+        overflow: hidden;
+    
+        p {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+    
+            span {
+                color: #5175FF;
+            }
+        }
+    
+        .time__left {
+            @include flex-row();
+            justify-content: center;
+            gap: 15px;
+    
+            div {
+                @include flex-column();
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                width: 72px;
+                height: 92px;
+                box-sizing: border-box;
+                background-color: #333950;
+                border-radius: 8px;
+                z-index: 2;
+                
+                strong {
+                    font-size: 32px;
+                    font-weight: 700;
+    
+                }
+    
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: rgba(255, 255, 255, 0.6);
+                }
+            }
+        }
+    
+        .footer--background-img {
+            width: 100%;
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+            transform: scale(4);
+            z-index: 0;
+    
+        }    
+    }
+
 
 
 
 }
+
