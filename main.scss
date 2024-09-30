@@ -472,3 +472,113 @@ main {
     
     }
 }
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .header {
+        max-width: 1110px;
+        margin: auto;
+        padding: 81px 40px 70px 40px;
+
+        article {
+    
+            .header__illustration {
+                width: 375px;
+            }
+
+            h1 {
+                font-size: 46px;
+            }
+
+        }
+        
+        button {            
+            bottom: 0px;
+        }
+    } 
+
+    main {
+        padding-top: 350px;
+    
+        .plans__section {
+            max-width: 1110px;
+            left: 50%;
+            transform: translateX(-50%);
+            
+            @include flex-row();
+            padding: 100px 40px;
+    
+            .plan__div {
+                width: 100%;
+                @include flex-column();
+                align-items: center;
+                gap: 66px;
+                padding: 40px;
+                text-align: center;
+                position: relative;                
+    
+                h5 {
+                    margin-bottom: 20px;
+                }
+    
+                strong {
+                    margin-bottom: 15px;
+                }
+    
+                button {
+                    position: static;
+                    left: 40px;
+                    bottom: 0px;
+                }
+    
+            }
+    
+    
+            .plan--pro {
+                    
+                .plan-pro--background {
+                    position: absolute;
+                    width: 100%;
+                    top: -10%;
+                    left: 0;
+                    transform: scale(3);
+                }
+            }
+    
+            .plan--ultimate {
+                background-color: rgb(241, 241, 241);
+    
+                div {
+    
+                    &:first-child {
+                        color: #333950;
+                    }
+    
+                    &:nth-child(2) {
+                        color: #333950;
+                    }
+                }
+    
+                button {
+                    @include button-gen();
+                    background-color: rgba(81, 117, 255, 0.1);
+                    color: #5175FF;
+                }
+            }
+    
+        }
+    
+        footer {    
+            padding: 400px 24px 100px 24px;
+        }
+    
+    
+    
+    
+    }
+
+
+}
+
