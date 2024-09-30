@@ -267,6 +267,13 @@ main {
             z-index: 0;
     
         }    
+
+        .footer-btn {
+            @include button-gen();
+            background-color: #5175FF;
+            color: #fff;
+            margin-top: 50px;
+        }
     }
 
 
@@ -415,7 +422,7 @@ main {
             overflow: hidden;
         
             p {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: 3px;
                 margin-bottom: 25px;
@@ -435,21 +442,21 @@ main {
                     align-items: center;
                     justify-content: center;
                     gap: 5px;
-                    width: 72px;
-                    height: 92px;
+                    width: 100px;
+                    height: 128px;
                     box-sizing: border-box;
                     background-color: #333950;
                     border-radius: 8px;
                     z-index: 2;
                     
                     strong {
-                        font-size: 32px;
+                        font-size: 56px;
                         font-weight: 700;
         
                     }
         
                     span {
-                        font-size: 12px;
+                        font-size: 16px;
                         font-weight: 400;
                         color: rgba(255, 255, 255, 0.6);
                     }
@@ -582,3 +589,78 @@ main {
 
 }
 
+
+
+
+@media only screen and (min-width: 1300px) {
+
+    .header__background-img {
+        width: 100% !important;
+        position: absolute;
+        transform: scale(0.8);
+        top: -30%;
+        left: 35%;
+    }
+
+    .header {
+        max-width: 1110px;
+        margin: auto;
+        padding: 81px 0px 70px 0px;
+
+        article {
+    
+            .header__illustration {
+                width: 475px;
+                transform: translateY(50px);
+            }
+
+            hgroup {
+                transform: translateY(-20px);
+            }
+
+            h1 {
+                font-size: 56px;
+            }
+
+        }
+        
+        button {            
+            bottom: 50px;
+        }
+    } 
+
+
+    main {
+        padding-top: 350px;
+    
+        .plans__section {
+            padding: 100px 0px;
+        }
+    
+        .coming__soon {    
+            max-width: 1110px;
+            margin: auto;
+            text-align: left;
+            position: relative;
+
+            .time__left {
+                justify-content: start;
+
+            }
+        }
+
+        .footer-btn {
+            position: absolute;
+            margin: 0px !important;
+            top: 50%;
+            right: 0;
+
+            transform: translateY(-30%);
+        }
+    
+    
+    
+    
+    }
+    
+}

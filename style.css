@@ -186,6 +186,18 @@ main {
       left: 0;
       transform: scale(4);
       z-index: 0; }
+    main footer .footer-btn {
+      width: 171px;
+      height: 56px;
+      border: none;
+      background: none;
+      border-radius: 33px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 700;
+      background-color: #5175FF;
+      color: #fff;
+      margin-top: 50px; }
 
 @media only screen and (min-width: 768px) {
   .header__background-img {
@@ -277,7 +289,7 @@ main {
       position: relative;
       overflow: hidden; }
       main footer p {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         letter-spacing: 3px;
         margin-bottom: 25px; }
@@ -294,17 +306,17 @@ main {
           align-items: center;
           justify-content: center;
           gap: 5px;
-          width: 72px;
-          height: 92px;
+          width: 100px;
+          height: 128px;
           box-sizing: border-box;
           background-color: #333950;
           border-radius: 8px;
           z-index: 2; }
           main footer .time__left div strong {
-            font-size: 32px;
+            font-size: 56px;
             font-weight: 700; }
           main footer .time__left div span {
-            font-size: 12px;
+            font-size: 16px;
             font-weight: 400;
             color: rgba(255, 255, 255, 0.6); }
       main footer .footer--background-img {
@@ -377,3 +389,41 @@ main {
           color: #5175FF; }
     main footer {
       padding: 400px 24px 100px 24px; } }
+
+@media only screen and (min-width: 1300px) {
+  .header__background-img {
+    width: 100% !important;
+    position: absolute;
+    transform: scale(0.8);
+    top: -30%;
+    left: 35%; }
+  .header {
+    max-width: 1110px;
+    margin: auto;
+    padding: 81px 0px 70px 0px; }
+    .header article .header__illustration {
+      width: 475px;
+      transform: translateY(50px); }
+    .header article hgroup {
+      transform: translateY(-20px); }
+    .header article h1 {
+      font-size: 56px; }
+    .header button {
+      bottom: 50px; }
+  main {
+    padding-top: 350px; }
+    main .plans__section {
+      padding: 100px 0px; }
+    main .coming__soon {
+      max-width: 1110px;
+      margin: auto;
+      text-align: left;
+      position: relative; }
+      main .coming__soon .time__left {
+        justify-content: start; }
+    main .footer-btn {
+      position: absolute;
+      margin: 0px !important;
+      top: 50%;
+      right: 0;
+      transform: translateY(-30%); } }
