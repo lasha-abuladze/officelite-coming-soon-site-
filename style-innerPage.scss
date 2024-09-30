@@ -1,0 +1,120 @@
+
+@mixin button-gen {
+    width: 171px;
+    height: 56px;
+    border: none;
+    background: none;
+
+    border-radius: 33px;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+body {
+    background-color: #fff;
+    font-family: "Kumbh Sans", system-ui;
+    position: relative;
+}
+
+
+main {
+
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+
+    .header-pattern {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        transform: scale(1.5) translateY(-30%);
+    }
+
+    section {
+        padding: 100px 24px;
+        
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            color: #333950;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: normal;
+            color: #747B95;
+            line-height: 26px;
+        }
+
+        .coming__soon {
+            margin-top: 80px;
+            
+           
+            p {
+               font-size: 18px;
+               color: #333950;
+               font-weight: 600;
+               letter-spacing: 1.5px;
+               
+               span {
+                color: #5175FF;
+               }
+               
+            }
+
+            .time__left {
+                // background-color: #5175FF;
+                margin-top: 15px;
+                @include flex-row();
+                justify-content: center;
+                gap: 15px;
+
+                div {
+                    @include flex-column();
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    border-radius: 8px;
+
+                    width: 72px;
+                    height: 92px;
+                    background-color: rgba(81, 117, 255, 0.2);
+
+                    strong {
+                        font-size: 32px;
+                        font-weight: 700;
+                        color: #5175FF;
+                    }
+
+                    span {
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: rgba(51, 57, 80, 0.5);
+                    }
+
+                }
+            }
+            
+        }
+    }
+    
+
+}
