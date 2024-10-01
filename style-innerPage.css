@@ -21,6 +21,8 @@ main {
     z-index: -1; }
   main section {
     padding: 100px 0px; }
+    main section .logo-article {
+      display: none; }
     main section h1 {
       font-size: 40px;
       font-weight: 700;
@@ -242,3 +244,123 @@ main {
       main .dark-background .img img {
         bottom: -50%;
         transform: scale(2); } }
+
+@media only screen and (min-width: 1024px) {
+  main {
+    height: 100vh !important;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0;
+    padding-top: 150px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden; }
+    main .logo {
+      position: absolute;
+      left: 40px;
+      top: 40px; }
+    main .header-pattern {
+      display: none; }
+    main section {
+      padding: 0px; }
+      main section article {
+        max-width: 472px;
+        margin: 0;
+        text-align: left; }
+        main section article h1 {
+          margin-bottom: 26px; }
+        main section article p {
+          padding: 0px; }
+      main section .coming__soon {
+        text-align: left;
+        margin-top: 50px; }
+        main section .coming__soon p {
+          font-size: 20px; }
+        main section .coming__soon .time__left {
+          justify-content: start; }
+          main section .coming__soon .time__left div {
+            width: 80px;
+            height: 108px; }
+            main section .coming__soon .time__left div strong {
+              font-size: 46px; }
+            main section .coming__soon .time__left div span {
+              font-size: 16px; }
+    main form {
+      width: 400px;
+      height: fit-content;
+      margin: auto;
+      padding: 38px;
+      box-sizing: border-box;
+      margin-bottom: 0;
+      margin: 0; }
+      main form .inp-div {
+        height: 60px; }
+    main .dark-background {
+      height: 100%;
+      width: 400px;
+      left: 100%;
+      transform: translateX(-100%); }
+      main .dark-background .img img {
+        bottom: -50%;
+        transform: scale(2); } }
+
+@media only screen and (min-width: 1300px) {
+  main {
+    height: 100vh !important;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0;
+    padding-top: 200px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden; }
+    main .logo {
+      display: none; }
+    main .header-pattern {
+      display: none; }
+    main section {
+      padding: 0px; }
+      main section article {
+        max-width: 540px;
+        margin: 0;
+        text-align: left;
+        position: relative; }
+        main section article .logo-article {
+          display: block;
+          position: absolute;
+          top: -150px;
+          left: 0; }
+        main section article h1 {
+          font-size: 56px; }
+      main section .coming__soon .time__left div {
+        width: 100px;
+        height: 128px; }
+        main section .coming__soon .time__left div strong {
+          font-size: 56px; }
+        main section .coming__soon .time__left div span {
+          font-size: 16px; }
+    main form {
+      width: 445px;
+      transform: translateX(-10%);
+      height: fit-content;
+      margin: auto;
+      padding: 38px;
+      box-sizing: border-box;
+      margin-bottom: 0;
+      margin: 0; }
+      main form .inp-div {
+        height: 60px; }
+    main .dark-background {
+      height: 100%;
+      width: 400px;
+      left: 100%;
+      transform: translateX(-100%); }
+      main .dark-background .img img {
+        top: 0;
+        transform: scale(4.5); } }

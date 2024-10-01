@@ -55,6 +55,10 @@ main {
 
     section {
         padding: 100px 0px;
+
+        .logo-article {
+            display: none;
+        }
         
         h1 {
             font-size: 40px;
@@ -87,7 +91,6 @@ main {
             }
 
             .time__left {
-                // background-color: #5175FF;
                 margin-top: 15px;
                 @include flex-row();
                 justify-content: center;
@@ -387,6 +390,208 @@ main {
                 img {
                     bottom: -50%;
                     transform: scale(2);
+                }
+            }
+        }
+        
+    
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    main {
+        height: 100vh !important;
+        @include flex-row();
+        box-sizing: border-box;
+        justify-content: space-around;
+
+        .logo {
+            position: absolute;
+            left: 40px;
+            top: 40px;
+        }
+
+        text-align: left;
+        padding: 0;
+        padding-top: 150px;
+        box-sizing: border-box;
+        position: relative;
+        overflow-x: hidden;
+    
+        .header-pattern {
+            display: none;
+        }
+    
+        section {
+            padding: 0px;
+
+            article {
+                max-width: 472px;
+                margin: 0;
+                text-align: left;
+
+                h1 {
+                    margin-bottom: 26px;
+                }
+        
+                p {
+                    padding: 0px;
+                }
+            }
+    
+            .coming__soon {
+                text-align: left; 
+                margin-top: 50px;
+               
+                p {
+                   font-size: 20px;                   
+                }
+    
+                .time__left {
+                    
+                    justify-content: start;
+
+                    div {
+                        width: 80px;
+                        height: 108px;
+    
+                        strong {
+                            font-size: 46px;
+                        }
+    
+                        span {
+                            font-size: 16px;
+                        }
+    
+                    }
+                }
+                
+            }
+        }
+    
+        form {
+            width: 400px;
+            height: fit-content;
+            margin: auto;
+            padding: 38px;
+            box-sizing: border-box;
+            margin-bottom: 0;
+            margin: 0;
+    
+            .inp-div {
+                height: 60px;
+            }      
+        }
+    
+        .dark-background {
+            height: 100%;
+            width: 400px;
+            left: 100%;
+            transform: translateX(-100%);
+    
+            .img {    
+                img {
+                    bottom: -50%;
+                    transform: scale(2);
+                }
+            }
+        }
+        
+    
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    main {
+        height: 100vh !important;
+        @include flex-row();
+        box-sizing: border-box;
+        justify-content: space-around;
+
+        .logo {
+            display: none;
+        }
+
+        text-align: left;
+        padding: 0;
+        padding-top: 200px;
+        box-sizing: border-box;
+        position: relative;
+        overflow-x: hidden;
+    
+        .header-pattern {
+            display: none;
+        }
+    
+        section {
+            padding: 0px;
+
+            article {
+                max-width: 540px;
+                margin: 0;
+                text-align: left;
+                position: relative;
+
+                .logo-article {
+                    display: block;
+                    position: absolute;
+                    top: -150px;
+                    left: 0;
+                }
+
+                h1 {
+                    font-size: 56px;
+                }
+            }
+    
+            .coming__soon {
+    
+                .time__left {
+                
+                    div {
+                        width: 100px;
+                        height: 128px;
+    
+                        strong {
+                            font-size: 56px;
+                        }
+    
+                        span {
+                            font-size: 16px;
+                        }
+    
+                    }
+                }
+                
+            }
+        }
+    
+        form {
+            width: 445px;
+            transform: translateX(-10%);
+            height: fit-content;
+            margin: auto;
+            padding: 38px;
+            box-sizing: border-box;
+            margin-bottom: 0;
+            margin: 0;
+    
+            .inp-div {
+                height: 60px;
+            }      
+        }
+    
+        .dark-background {
+            height: 100%;
+            width: 400px;
+            left: 100%;
+            transform: translateX(-100%);
+    
+            .img {    
+                img {
+                    top: 0;
+                    transform: scale(4.5);
                 }
             }
         }
