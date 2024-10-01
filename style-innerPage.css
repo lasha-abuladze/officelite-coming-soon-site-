@@ -1,3 +1,6 @@
+.display-none {
+  display: none; }
+
 body {
   background-color: #fff;
   font-family: "Kumbh Sans", system-ui;
@@ -5,6 +8,7 @@ body {
 
 main {
   text-align: center;
+  padding: 0px 24px;
   padding-top: 80px;
   box-sizing: border-box;
   position: relative;
@@ -13,9 +17,10 @@ main {
     position: absolute;
     width: 100%;
     left: 0;
-    transform: scale(1.5) translateY(-30%); }
+    transform: scale(1.5) translateY(-31%);
+    z-index: -1; }
   main section {
-    padding: 100px 24px; }
+    padding: 100px 0px; }
     main section h1 {
       font-size: 40px;
       font-weight: 700;
@@ -59,3 +64,136 @@ main {
             font-size: 12px;
             font-weight: 700;
             color: rgba(51, 57, 80, 0.5); }
+  main form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px rgba(51, 57, 80, 0.2);
+    padding: 24px;
+    margin-bottom: 100px; }
+    main form .inp-div {
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #747B95;
+      position: relative; }
+      main form .inp-div input {
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333950; }
+        main form .inp-div input::placeholder {
+          font-size: 16px;
+          font-weight: 400;
+          color: #747B95; }
+      main form .inp-div .error-svg {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none; }
+      main form .inp-div .dropdown-ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 16px;
+        box-sizing: border-box;
+        position: relative; }
+        main form .inp-div .dropdown-ul b {
+          font-size: 16px;
+          font-weight: 700;
+          color: #333950; }
+        main form .inp-div .dropdown-ul span {
+          font-size: 14px;
+          font-weight: 600;
+          color: #747B95;
+          margin-left: 5px; }
+        main form .inp-div .dropdown-ul ul {
+          padding: 0px 16px;
+          box-sizing: border-box;
+          position: absolute;
+          z-index: 1;
+          bottom: -310%;
+          width: 100%;
+          left: 0;
+          border: 1px solid #747B95;
+          border-radius: 8px;
+          background-color: #fff; }
+      main form .inp-div .arrow-svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 16px; }
+      main form .inp-div .radio-inp {
+        padding-left: 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #747B95; }
+        main form .inp-div .radio-inp label {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          text-align: left;
+          order: 1;
+          position: relative; }
+        main form .inp-div .radio-inp label::after {
+          content: ' ';
+          display: block;
+          width: 11px;
+          height: 5px;
+          border-bottom: 2px solid #5175FF;
+          border-left: 2px solid #5175FF;
+          position: absolute;
+          right: -15px;
+          top: 50%;
+          transform: translateY(-100%) rotate(-45deg); }
+        main form .inp-div .radio-inp input {
+          order: 2;
+          width: 20px;
+          visibility: hidden; }
+        main form .inp-div .radio-inp input + label::after {
+          display: none; }
+        main form .inp-div .radio-inp input:checked + label::after {
+          display: block; }
+    main form .submit-btn {
+      width: 100%;
+      margin-top: 24px;
+      height: 48px;
+      border-radius: 33px;
+      background: #5175FF;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer; }
+  main .dark-background {
+    width: 100%;
+    height: 300px;
+    background-color: #333950;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1; }
+    main .dark-background .img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden; }
+      main .dark-background .img img {
+        width: 100%;
+        position: absolute;
+        bottom: -70px;
+        left: 0;
+        transform: scale(3.5); }
