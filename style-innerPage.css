@@ -181,7 +181,7 @@ main {
   main .dark-background {
     width: 100%;
     height: 300px;
-    background-color: #333950;
+    background-color: #25293A;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -197,3 +197,48 @@ main {
         bottom: -70px;
         left: 0;
         transform: scale(3.5); }
+
+@media only screen and (min-width: 768px) {
+  main {
+    text-align: left;
+    padding: 0px 24px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden; }
+    main .header-pattern {
+      display: none; }
+    main section {
+      padding: 100px 0px; }
+      main section article {
+        max-width: 572px;
+        margin: auto;
+        text-align: center; }
+        main section article h1 {
+          margin-bottom: 26px; }
+        main section article p {
+          padding: 0px 20px; }
+      main section .coming__soon {
+        text-align: center; }
+        main section .coming__soon p {
+          font-size: 20px; }
+        main section .coming__soon .time__left div {
+          width: 100px;
+          height: 128px; }
+          main section .coming__soon .time__left div strong {
+            font-size: 56px; }
+          main section .coming__soon .time__left div span {
+            font-size: 16px; }
+    main form {
+      width: 445px;
+      margin: auto;
+      padding: 48px;
+      box-sizing: border-box;
+      margin-bottom: 160px; }
+      main form .inp-div {
+        height: 60px; }
+    main .dark-background {
+      height: 400px; }
+      main .dark-background .img img {
+        bottom: -50%;
+        transform: scale(2); } }

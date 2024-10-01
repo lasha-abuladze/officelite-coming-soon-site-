@@ -281,7 +281,7 @@ main {
     .dark-background {
         width: 100%;
         height: 300px;
-        background-color: #333950;
+        background-color: #25293A;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -305,3 +305,93 @@ main {
     
 
 }
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+    main {
+
+        text-align: left;
+        padding: 0px 24px;
+        padding-top: 80px;
+        box-sizing: border-box;
+        position: relative;
+        overflow-x: hidden;
+    
+        .header-pattern {
+            display: none;
+        }
+    
+        section {
+            padding: 100px 0px;
+
+            article {
+                max-width: 572px;
+                margin: auto;
+                text-align: center;
+
+                h1 {
+                    margin-bottom: 26px;
+                }
+        
+                p {
+                    padding: 0px 20px;
+                }
+            }
+    
+            .coming__soon {
+                text-align: center;               
+               
+                p {
+                   font-size: 20px;                   
+                }
+    
+                .time__left {
+
+                    div {
+                        width: 100px;
+                        height: 128px;
+    
+                        strong {
+                            font-size: 56px;
+                        }
+    
+                        span {
+                            font-size: 16px;
+                        }
+    
+                    }
+                }
+                
+            }
+        }
+    
+        form {
+            width: 445px;
+            margin: auto;
+            padding: 48px;
+            box-sizing: border-box;
+            margin-bottom: 160px;
+    
+            .inp-div {
+                height: 60px;
+            }      
+        }
+    
+        .dark-background {
+            height: 400px;
+    
+            .img {    
+                img {
+                    bottom: -50%;
+                    transform: scale(2);
+                }
+            }
+        }
+        
+    
+    }
+}
+
