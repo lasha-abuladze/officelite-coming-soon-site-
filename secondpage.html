@@ -65,42 +65,42 @@
         </section>
         
         
-        <form>
+        <form class="form">
 
-            <div class="inp-div">
-                <input type="text" placeholder="Name">
-                <img class="error-svg" src="./assets/sign-up/icon-cross.svg" alt="#">
+            <div class="inp-div inputs">
+                <input class="inp" type="text" placeholder="Name">
+                <img class="error-svg display-none" src="./assets/sign-up/icon-cross.svg" alt="#">
             </div>
 
-            <div class="inp-div">
-                <input type="email" placeholder="Email Address">
-                <img class="error-svg" src="./assets/sign-up/icon-cross.svg" alt="#">
+            <div class="inp-div inputs">
+                <input class="inp" type="email" placeholder="Email Address">
+                <img class="error-svg display-none" src="./assets/sign-up/icon-cross.svg" alt="#">
             </div>
 
-            <div class="inp-div">
+            <div class="inp-div dropdown-div">
                 <ul class="dropdown-ul">
 
-                    <li> <b>Basic Pack</b> <span>free</span> </li>
+                    <li class="your-plan"> <b class="your-pack">Basic Pack</b> <span class="your-pack--price">free</span> </li>
 
-                    <ul class="display-none">
+                    <ul class="dropdown-plans display-none">
                         <li>
                             <div class="radio-inp">
                                 <input id="free-plan" type="radio" name="plan">
-                                <label for="free-plan"><b>Basic Pack</b> <span>free</span></label>
+                                <label for="free-plan"><b class="pack">Basic Pack</b> <span class="pack-price">free</span></label>
                             </div>                            
                         </li>
 
                         <li>
                             <div class="radio-inp">
                                 <input id="pro-plan" type="radio" name="plan">
-                                <label for="pro-plan"><b>Pro Pack</b> <span>$9.99</span></label>
+                                <label for="pro-plan"><b class="pack">Pro Pack</b> <span class="pack-price">$9.99</span></label>
                             </div>                            
                         </li>
 
                         <li>
                             <div class="radio-inp">
                                 <input id="ultimate-plan" type="radio" name="plan">
-                                <label for="ultimate-plan"><b>Ultimate Pack</b> <span>$19.99</span></label>
+                                <label for="ultimate-plan"><b class="pack">Ultimate Pack</b> <span class="pack-price">$19.99</span></label>
                             </div>                            
                         </li>
                     </ul>
@@ -110,17 +110,17 @@
                 <img class="arrow-svg" src="./assets/sign-up/icon-arrow-down.svg" alt="#">
             </div>
 
-            <div class="inp-div">
-                <input type="number" placeholder="Phone Number">
-                <img class="error-svg" src="./assets/sign-up/icon-cross.svg" alt="#">
+            <div class="inp-div inputs">
+                <input class="inp" type="number" placeholder="Phone Number">
+                <img class="error-svg display-none" src="./assets/sign-up/icon-cross.svg" alt="#">
             </div>
 
-            <div class="inp-div">
-                <input type="text" placeholder="Company">
-                <img class="error-svg" src="./assets/sign-up/icon-cross.svg" alt="#">
+            <div class="inp-div inputs">
+                <input class="inp" type="text" placeholder="Company">
+                <img class="error-svg display-none" src="./assets/sign-up/icon-cross.svg" alt="#">
             </div>
             
-            <input class="submit-btn" type="submit" value="Get on the list">
+            <input class="submit-btn inputs" type="submit" value="Get on the list">
 
 
         </form>
@@ -135,9 +135,6 @@
 
 
     </main>
-
-
-
 
     <script src="./script.js"></script>
     

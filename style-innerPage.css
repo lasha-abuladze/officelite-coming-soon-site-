@@ -1,6 +1,22 @@
 .display-none {
   display: none; }
 
+.rotate {
+  transform: rotate(180deg) !important; }
+
+.dropdown-div {
+  cursor: pointer; }
+
+.radio-inp label {
+  cursor: pointer !important; }
+
+.error-border {
+  border-bottom: 1px solid #F05B5B !important; }
+
+.error-email {
+  color: #F05B5B;
+  border-bottom: 1px solid #F05B5B !important; }
+
 body {
   background-color: #fff;
   font-family: "Kumbh Sans", system-ui;
@@ -96,8 +112,7 @@ main {
         position: absolute;
         right: 16px;
         top: 50%;
-        transform: translateY(-50%);
-        display: none; }
+        transform: translateY(-50%); }
       main form .inp-div .dropdown-ul {
         height: 100%;
         display: flex;
@@ -239,6 +254,8 @@ main {
       margin-bottom: 160px; }
       main form .inp-div {
         height: 60px; }
+      main form .dropdown-plans {
+        top: 60px; }
     main .dark-background {
       height: 400px; }
       main .dark-background .img img {
