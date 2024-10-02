@@ -18,7 +18,15 @@ const errorSvgArr = document.querySelectorAll(`.error-svg`);
 
 
 
-freePlan.checked = true;
+//// timer elements
+
+const daysLeft = document.querySelector(`.days--left`);
+const hoursLeft = document.querySelector(`.hours--left`);
+const minLeft = document.querySelector(`.min--left`);
+const secLeft = document.querySelector(`.sec--left`);
+
+
+
 
 
 
@@ -26,8 +34,9 @@ btn?.addEventListener(`click`, () => {
     window.open("./secondpage.html", "_blank");
 })
 
+// freePlan?.checked = true;
 
-dropDownDiv.addEventListener(`click`, () => {
+dropDownDiv?.addEventListener(`click`, () => {
 
     dropdownPlans?.classList.toggle(`display-none`);
     arrowSVG.classList.toggle(`rotate`);
@@ -51,7 +60,7 @@ dropDownDiv.addEventListener(`click`, () => {
 
 
 
-submitBtn.addEventListener(`click`, (e) => {
+submitBtn?.addEventListener(`click`, (e) => {
     e.preventDefault();
 
     inputs.forEach((el,i) => {
@@ -64,3 +73,28 @@ submitBtn.addEventListener(`click`, (e) => {
         }
     })
 })
+
+
+
+
+
+
+///////
+
+
+setInterval(() => {
+    const currentDate = new Date();
+    const comingDate = new Date('2024-12-10');
+    const diffInTime = comingDate - currentDate;
+
+    const currsecond = String(Math.trunc(diffInTime / 1000) % 60).padStart(2,0);
+    const currMin = String(Math.trunc(Math.trunc(diffInTime / 1000) / 60) % 60).padStart(2,0);
+
+    console.log(currentDate.getHours())
+
+    secLeft.textContent = currsecond;
+    minLeft.textContent = currMin;
+    hoursLeft.textContent = `${24 - (currentDate.getHours() + 1)}`
+    daysLeft.textContent = `${Math.trunc(diffInTime / (1000 * 60 * 60 * 24)) - 1}`
+
+}, 1000);
