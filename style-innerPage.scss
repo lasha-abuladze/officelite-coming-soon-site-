@@ -51,6 +51,18 @@
 
 
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
 body {
     background-color: #fff;
     font-family: "Kumbh Sans", system-ui;
@@ -231,6 +243,10 @@ main {
                 right: 16px;
             }
 
+            .last--radio-inp {
+                border: none !important;
+            }
+
 
             .radio-inp {
                 padding-left: 16px;
@@ -240,7 +256,7 @@ main {
 
                 width: 100%;
                 height: 50px;
-                border-bottom: 1px solid #747B95;
+                border-bottom: 1px solid #747B95;   
 
                 label {
                     @include flex-row();
@@ -402,7 +418,10 @@ main {
             }      
 
             .dropdown-plans {
+                padding: 20px;
+                box-sizing: border-box;
                 top: 60px;
+                height: fit-content;
             }
         }
     

@@ -1,7 +1,7 @@
 `use strict`;
 
 
-const btn = document.querySelector(`.btn--get-started`);
+const btn = document.querySelectorAll(`.btn`);
 const dropDownDiv = document.querySelector(`.dropdown-div`);
 const dropdownPlans = document.querySelector(`.dropdown-plans`);
 const freePlan = document.querySelector(`#free-plan`);
@@ -30,11 +30,12 @@ const secLeft = document.querySelector(`.sec--left`);
 
 
 
-btn?.addEventListener(`click`, () => {
-    window.open("./secondpage.html", "_blank");
+btn.forEach(el => {
+    el.addEventListener(`click`, () => {
+        window.open("./secondpage.html", "_self");
+    })
 })
 
-// freePlan?.checked = true;
 
 dropDownDiv?.addEventListener(`click`, () => {
 
@@ -58,8 +59,6 @@ dropDownDiv?.addEventListener(`click`, () => {
 
 })
 
-
-
 submitBtn?.addEventListener(`click`, (e) => {
     e.preventDefault();
 
@@ -81,20 +80,32 @@ submitBtn?.addEventListener(`click`, (e) => {
 
 ///////
 
+{
+    let currentDate = new Date();
+    let comingDate = new Date('2024-12-10');
+    let diffInTime = comingDate - currentDate;
 
-setInterval(() => {
-    const currentDate = new Date();
-    const comingDate = new Date('2024-12-10');
-    const diffInTime = comingDate - currentDate;
-
-    const currsecond = String(Math.trunc(diffInTime / 1000) % 60).padStart(2,0);
-    const currMin = String(Math.trunc(Math.trunc(diffInTime / 1000) / 60) % 60).padStart(2,0);
-
-    console.log(currentDate.getHours())
+    let currsecond = String(Math.trunc(diffInTime / 1000) % 60).padStart(2,0);
+    let currMin = String(Math.trunc(Math.trunc(diffInTime / 1000) / 60) % 60).padStart(2,0);
 
     secLeft.textContent = currsecond;
-    minLeft.textContent = currMin;
-    hoursLeft.textContent = `${24 - (currentDate.getHours() + 1)}`
-    daysLeft.textContent = `${Math.trunc(diffInTime / (1000 * 60 * 60 * 24)) - 1}`
+    minLeft.textContent = String(currMin).padStart(2,0);
+    hoursLeft.textContent = String(24 - (currentDate.getHours() + 1)).padStart(2,0);
+    daysLeft.textContent = `${String(Math.trunc(diffInTime / (1000 * 60 * 60 * 24)) - 1).padStart(2,0)}`
+
+}
+
+setInterval(() => {
+    currentDate = new Date();
+    comingDate = new Date('2024-12-10');
+    diffInTime = comingDate - currentDate;
+
+    currsecond = String(Math.trunc(diffInTime / 1000) % 60).padStart(2,0);
+    currMin = String(Math.trunc(Math.trunc(diffInTime / 1000) / 60) % 60).padStart(2,0);
+
+    secLeft.textContent = currsecond;
+    minLeft.textContent = String(currMin).padStart(2,0);
+    hoursLeft.textContent = String(24 - (currentDate.getHours() + 1)).padStart(2,0);
+    daysLeft.textContent = `${String(Math.trunc(diffInTime / (1000 * 60 * 60 * 24)) - 1).padStart(2,0)}`
 
 }, 1000);

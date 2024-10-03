@@ -17,6 +17,14 @@
   color: #F05B5B;
   border-bottom: 1px solid #F05B5B !important; }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
 body {
   background-color: #fff;
   font-family: "Kumbh Sans", system-ui;
@@ -146,6 +154,8 @@ main {
         top: 50%;
         transform: translateY(-50%);
         right: 16px; }
+      main form .inp-div .last--radio-inp {
+        border: none !important; }
       main form .inp-div .radio-inp {
         padding-left: 16px;
         box-sizing: border-box;
@@ -255,7 +265,10 @@ main {
       main form .inp-div {
         height: 60px; }
       main form .dropdown-plans {
-        top: 60px; }
+        padding: 20px;
+        box-sizing: border-box;
+        top: 60px;
+        height: fit-content; }
     main .dark-background {
       height: 400px; }
       main .dark-background .img img {

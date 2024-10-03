@@ -173,6 +173,7 @@ main {
             button {
                 background-color: #fff;
                 color: #5175FF;
+                z-index: 2;
             }
 
             .plan-pro--background {
@@ -226,11 +227,16 @@ main {
                 color: #5175FF;
             }
         }
+
+        .coming__soon {
+            z-index: 5;
+        }
     
         .time__left {
             @include flex-row();
             justify-content: center;
             gap: 15px;
+            z-index: 5;
     
             div {
                 @include flex-column();

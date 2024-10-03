@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass ./main.scss ./style.css",
+    "compile:sass": "node-sass ./main.scss ./style.css -w",
     "compileInner:sass": "node-sass ./style-innerPage.scss ./style-innerPage.css -w"
   },
   "author": "",
